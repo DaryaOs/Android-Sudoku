@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game">
+
+    <TableLayout
+        android:layout_width="336dp"
+        android:layout_height="319dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/cellGroupFragment"
+                android:name="me.kirkhorn.knut.android_sudoku.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="0"
+                tools:layout="@layout/fragment_cell_group" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment2"
+                android:name="me.kirkhorn.knut.android_sudoku.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="1"
+                tools:layout="@layout/fragment_cell_group" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment3"
+                android:name="me.kirkhorn.knut.android_sudoku.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="2"
+                tools:layout="@layout/fragment_cell_group" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/cellGroupFragment4"
+                android:name="me.kirkhorn.knut.android_sudoku.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="3"
+                tools:layout="@layout/fragment_cell_group" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment5"
+                android:name="me.kirkhorn.knut.android_sudoku.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="4"
+                tools:layout="@layout/fragment_cell_group" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment6"
+                android:name="me.kirkhorn.knut.android_sudoku.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="5"
+                tools:layout="@layout/fragment_cell_group" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="117dp">
+
+            <fragment
+                android:id="@+id/cellGroupFragment7"
+                android:name="me.kirkhorn.knut.android_sudoku.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="6"
+                tools:layout="@layout/fragment_cell_group" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment8"
+                android:name="me.kirkhorn.knut.android_sudoku.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="7"
+                tools:layout="@layout/fragment_cell_group" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment9"
+                android:name="me.kirkhorn.knut.android_sudoku.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="8"
+                tools:layout="@layout/fragment_cell_group" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:background="#A4F1A9D3"
+        android:onClick="onGoBackButtonClicked"
+        android:text="@string/go_back_button"
+        android:textColor="#702655"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964" />
+
+    <Button
+        android:id="@+id/buttonCheckBoard"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:background="#B4F1A9D3"
+        android:onClick="onCheckBoardButtonClicked"
+        android:text="@string/check_board"
+        android:textColor="#702655"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964"
+        tools:ignore="TextSizeCheck" />
+
+</android.support.constraint.ConstraintLayout>

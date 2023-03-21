@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Android-Sudoku</string>
+    <string name="sudoku">Судоку</string>
+
+    <string name="new_game">Почати нову гру</string>
+    <string name="add_new_board">Додати нову дошку</string>
+    <string name="continue_new_board">Продовжити</string>
+    <string name="successful_new_board">Нова дошка збережена</string>
+    <string name="fail_new_board">Помилка збереження нової дошки</string>
+    <string name="show_instructions">Показати інструкцію</string>
+
+    <string name="instructions">Інструкція</string>
+    <string name="instructions_1">1. Судоку призначений для разміщення всіх цифр, які залишилися на дошці. Числа змінюються від 1 до 9 (в судоку 9x9).</string>
+    <string name="instructions_2">2. Дошка розділена на декілька квадратів, і всередині кожного з них дозволяється розміщувати тільки по одному числу кожного числа..</string>
+    <string name="instructions_3">3. Дозволяється розміщувати тільки по одному числу кожного числа в кожному рядку, як горизонтальному, так і вертикальному..</string>
+    <string name="go_back_button">Назад</string>
+
+    <string name="choose_difficulty">Обрати складність:</string>
+    <string name="difficulty_easy">Легка</string>
+    <string name="difficulty_normal">Середня</string>
+    <string name="difficulty_hard">Складна</string>
+    <string name="start_game">Почати гру</string>
+    <string name="choose_number">Оберіть цифру</string>
+    <string name="choose_a_number">Оберіть цифру на дошці:</string>
+    <string name="place_number">Номер місця</string>
+    <string name="piece_unsure">Відмітити цифру як невпевнену</string>
+    <string name="remove_piece">Видалити</string>
+    <string name="start_piece_error">Неможливо змінити початкову частина</string>
+    <string name="check_board">Перевірити дошку</string>
+    <string name="board_correct">Дошка зібрана правильно, вітаю!</string>
+    <string name="board_incorrect">Дошка зібрана неправильно, спробуйте ще раз!</string>
+
+    <string name="game_win">Вы перемогли! Вітаю</string>
+    <string name="game_lose">Вы програли! Спробуйте ще раз</string>
+</resources>
